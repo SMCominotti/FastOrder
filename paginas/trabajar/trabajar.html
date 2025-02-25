@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FastOrder</title>
+    <link rel="icon" href="../../imagenes/FastOrderLogo.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arima:wght@700&family=Cinzel&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/normalize.css" /> <!-- Esto es para que nuestra web se vea igual independientemente del navegador que se utilice -->
+    <link rel="stylesheet" href="../../css/estilosIndex.css" />
+    <link rel="stylesheet" href="../trabajar/trabajar.css" />
+  </head>
+  <body>
+    <header class="encabezado">
+      <div class="contenedor-navegacion">
+          <div class="contenido-navegacion contenedor">
+              <div class="logo">
+                  <img src="../../imagenes/FastOrderLogo-sinfondo.png" width="25%" height="25%" alt="Logo FastOrder">
+              </div>
+              <nav class="navegacion ocultar">
+                  <a href="../../index.html">Inicio</a>
+                  <a href="../conocenos/conocenos.html">Conócenos</a>
+                  <a href="../servicios/servicios.html">Servicios</a>
+                  <a href="../contacto/contacto.html">Contacto</a>
+                  <a href="../trabajar/trabajar.html">Trabaja con nosotros</a>
+              </nav>
+              <div class="hamburguesa">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
+          </div>
+      </div>
+      <h1 class="titulo tituloppal">Trabaja con Nosotros</h1>
+    <p class="titulo titulosecundario">¡Únete a nuestro equipo! Completa el formulario y adjunta tu currículum.</p>
+  </header>
+
+  <section class="formulario">
+    <h2 class="postulacion">Formulario de Postulación</h2>
+    <form id="formularioTrabaja" action="http://servidor/respuesta" method="post">
+      <div class="input-formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su Nombre">
+        <span class="error" id="errorNombre"></span>
+      </div>
+
+      <div class="input-formulario">
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Ingrese su Apellido">
+        <span class="error" id="errorApellido"></span>
+      </div>
+
+      <div class="input-formulario">
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="ejemplo@ejemplo.com">
+        <span class="error" id="errorCorreo"></span>
+      </div>
+
+      <div class="input-formulario">
+        <label  for="telefono">Teléfono (opcional):</label>
+        <input  type="tel" id="telefono" name="telefono" placeholder="+54 111 111 1111">
+        <span class="error" id="errorTelefono"></span>
+      </div>
+
+      <div class="input-formulario">
+        <label for="mensaje">Mensaje:</label>
+        <textarea  id="mensaje" name="mensaje" placeholder="Escriba su mensaje"></textarea>
+        <span class="error" id="errorMensaje"></span>
+      </div>
+
+      <div class="input-formulario">
+        <label for="curriculum">Adjunta tu currículum (PDF):</label>
+        <input type="file" id="curriculum" name="curriculum" accept=".pdf">
+        <span class="error" id="errorCurriculum"></span>
+      </div>
+      <div class="contenedor-botones">
+      <button class="btntrabajar" type="submit" id="enviar">Enviar</button>
+      <button class="btntrabajar" type="reset" id="borrar">Borrar</button>
+      </div>
+    </form>
+  </section>
+  <div class="piePagina">
+    <div class="contenedor-piepagina">
+        <div class="info">
+            <h3>Datos de contacto</h3>
+            <p>72 Buenos Aires, Argentina 12304</p>
+            <p>+54 911 543 7789</p>
+            <p>fastorder@fastorder.com</p>
+        </div>
+        <div class="info">
+            <h3>Horarios</h3>
+            <p>Lunes a Viernes 10am - 18pm</p>
+            <p>Sábados 10am - 14 pm</p>
+            <div class="redes-sociales">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+        <div class="info">
+            <h3>Noticias</h3>
+            <p>Suscribete para recibir mas noticias</p>
+            <input type="email" placeholder="Tu correo">
+            <input type="submit" value="Suscribirse" class=" btn-rosa-Suscrip">
+        </div>
+    </div>
+</div>
+<footer class="footer">
+   <p>Todos los derechos reservados &copy; 2025 FastOrder, Desarrollado por Stella Maris Cominotti </p>
+</footer>
+  <script src="../../js/app.js"></script>
+  <script src="./trabajar.js"></script>
+</body>
+</html>

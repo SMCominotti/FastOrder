@@ -1,0 +1,167 @@
+/* Estos los pongo para que respete el contenedor padre */
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.texto-servicios {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.botones-servicios {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.botones-servicios button {
+    background-color: rgba(255, 182, 193, 0.6);
+    border: 1px solid rgb(247, 15, 189);
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0.5rem;
+    transition: background 0.3s ease;
+    font-family: arima, sans-serif;
+}
+
+.botones-servicios button:hover {
+    background-color: rgba(255, 182, 193, 0.8);
+    cursor:pointer;
+}
+
+.botones-servicios button:focus {
+    outline: none;
+    background-color: rgba(255, 182, 193, 0.9);
+}
+
+
+.btn-rosa {
+    display: inline-block;
+    background: #ff4081;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    
+}
+
+.btn-rosa:hover {
+    background: #e6006d;
+    cursor:pointer;
+}
+
+
+.servicios img {
+    width: 100%;
+    max-width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.servicios {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas por fila */
+    gap: 20px; /* Espaciado entre elementos */
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+@media (max-width: 1024px) {
+    .servicios {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    .servicios {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+}
+
+.tipo-restaurante, .funcionalidad {
+    width: 100%; 
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    min-height: 400px; 
+}
+
+.tipo-restaurante h2, .funcionalidad h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.tipo-restaurante ul, .funcionalidad ul {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.tipo-restaurante li, .funcionalidad li {
+    font-size: 1rem;
+    color: #555;
+    font-family: mulish, sans-serif;
+    text-align: justify;
+}
+
+
+.tipo-restaurante a, .funcionalidad a {
+    margin-top: auto; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 10px 20px;
+    background-color: #e91e63;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    min-width: 180px;
+    height: 50px; 
+}
+
+.tipo-restaurante a:hover, .funcionalidad a:hover {
+    background-color: #d81b60; 
+}
+
+.contenedor-boton {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 25vh; 
+}
+.btn-rosa-Suscrip {
+    display: inline-block;
+    background-color: #ff4081;
+    color: white;
+    padding: 5px 10px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    margin-top: 1rem;
+    font-family: mulish, sans-serif;
+    font-weight: bold;
+    }

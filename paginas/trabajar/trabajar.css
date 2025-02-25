@@ -1,0 +1,109 @@
+/*Estos los pongo para que respete el contenedor padre */
+html{
+    box-sizing: border-box;
+}
+*,*::after, *::before{
+    box-sizing: inherit;
+}
+
+body{
+    overflow-x:hidden;
+    background-color:rgba(255, 236, 236, 0.63); 
+}
+
+.titulo {
+    margin: 0;
+    background-color: rgb(255, 236, 236);
+    color: #ff4081;
+    text-align: center;
+    padding: 10px;
+}
+
+.tituloppal{
+    font-size: 4rem; 
+}
+
+.titulosecundario {
+    font-size: 2rem; 
+}
+
+
+.formulario {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.postulacion {
+    text-align: center;
+    color: #333;
+    font-size: 3rem; 
+}
+
+
+.input-formulario label{
+    display: block;
+    margin-top: 1.5%;
+    margin-bottom:1rem;
+    font-size: 1.5rem;
+    font-family: Mulish, sans-serif;
+  }
+  .input-formulario input, .input-formulario textarea{
+    width: 100%;
+    padding: 1rem 1.6rem;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 1.5%;
+  }
+  .input-formulario textarea{
+    margin-bottom: 2%;
+    height: 12rem;
+    resize: none;
+  }
+
+.btntrabajar {
+    background-color: #ff4081; 
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    display: inline-block;
+    }
+    .contenedor-botones{
+        display: flex;
+        justify-content: center; 
+        gap: 15px; 
+    }
+
+.btntrabajar:hover {
+    background-color: #70264f; 
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    display: none;
+}
+
+.btn-rosa-Suscrip {
+    display: inline-block;
+    background-color: #ff4081;
+    color: white;
+    padding: 5px 10px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    margin-top: 1rem;
+    font-family: mulish, sans-serif;
+    font-weight: bold;
+    }
